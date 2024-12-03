@@ -82,37 +82,51 @@ export default function Page() {
       <Header activeSection={activeSection} scrollToSection={scrollToSection} />
 
       <main>
-        <section ref={homeRef} className="pt-10 overflow-hidde bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16">
-          <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-              <div className="grid items-center grid-cols-1 md:grid-cols-2">
+        <section
+        ref={homeRef}
+        className="pt-20 overflow-hidden bg-gray-800 md:pt-16 sm:pt-20 2xl:pt-16"
+        >
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid items-center grid-cols-1 md:grid-cols-2">
+            <div>
+              <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+                Hey 👋 I am
+                <br className="block sm:hidden" /> Diar Kamberi
+              </h2>
+              <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-300 md:mt-8">
+                I have a deep passion for computers and a degree in Computer Science, with interests spanning low-level programming, system security, and Artificial Intelligence among others.
+              </p>
 
-                  <div>
-                      <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Hey 👋 I am
-                          <br className="block sm:hidden" /> Diar Kamberi
-                      </h2>
-                      <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-300 md:mt-8">
-                        I have a deep passion for computers and a degree in Computer Science, with interests spanning low-level programming, system security, and Artificial Intelligence among others.
-                      </p>
+              <p className="mt-4 text-xl text-gray-200 md:mt-8">
+                <span className="relative inline-block">
+                  <span className="absolute inline-block w-full bottom-0.5 h-2 bg-blue-700 dark:bg-gray-900"></span>
+                  <span className="relative">Have a question?</span>
+                </span>
+                <br className="block sm:hidden" /> Ask me on{" "}
+                <a
+                  href="mailto:diarkamberi1@gmail.com"
+                  className="transition-all duration-200 text-sky-400 hover:text-sky-500 hover:underline"
+                >
+                  Gmail
+                </a>
+              </p>
+            </div>
 
-                      <p className="mt-4 text-xl text-gray-200 md:mt-8">
-                          <span className="relative inline-block">
-                              <span className="absolute inline-block w-full bottom-0.5 h-2 bg-blue-700 dark:bg-gray-900"></span>
-                          <span className="relative"> Have a question? </span>
-                          </span>
-                          <br className="block sm:hidden" /> Ask me on <a href="mailto:diarkamberi1@gmail.com" title=""
-                              className="transition-all duration-200 text-sky-400 hover:text-sky-500 hover:underline">Gmail</a>
-                      </p>
-                  </div>
-
-                  <div className="relative">
-                      <img className="absolute inset-x-0 bottom-0 -mb-32 -translate-x-1/2 left-1/2 " src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
-
-                      <img className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="images/profile_cut.png" alt="" />
-                  </div>
-
-              </div>
+            <div className="relative">
+              <img
+                className="absolute inset-x-0 bottom-0 translate-x-0 sm:-mb-20 sm:left-1/2 sm:translate-x-[-50%] md:-mb-28 xl:scale-90"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg"
+                alt=""
+              />
+              <img
+                className="relative w-full max-w-xs mx-auto xl:max-w-lg 2xl:origin-bottom 2xl:scale-110"
+                src="images/profile_cut.png"
+                alt=""
+              />
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         <section ref={aboutRef} className="bg-white py-20 px-6">
           <div className="max-w-4xl mx-auto flex items-center">

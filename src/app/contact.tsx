@@ -18,7 +18,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contactRef }) => {
             <div className="text-left">
               <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
               <p className="text-lg text-gray-300 mb-8">
-                I&aposm always interested in hearing about new opportunities, projects, or just having a chat about technology.
+                I&apos;m always interested in hearing about new opportunities, projects, or just having a chat about technology.
               </p>
             </div>
 
