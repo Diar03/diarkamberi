@@ -1,9 +1,6 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Camera, Mail, Home, User, Briefcase, Code, Linkedin, Contact } from 'lucide-react';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Separator } from '@/components/ui/separator';
 import ProjectsSection from './projects';
 import ContactSection from './contact';

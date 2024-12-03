@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import { Home, User, Briefcase, Code, Contact } from 'lucide-react';
+import { Home, User, Briefcase, Code, Contact, LucideIcon } from 'lucide-react';
+
+
+type NavItemProps = {
+  id: string;
+  icon: LucideIcon; // Lucide icons are components, so we use their type
+  label: string;
+  activeSection: string;
+  onClick: (sectionId: string) => void; // Callback function that gets a string
+};
 
 const navItems = [
   { id: 'home', icon: Home, label: 'Home' },
@@ -9,7 +18,7 @@ const navItems = [
   { id: 'contact', icon: Contact, label: 'Contact' }
 ];
 
-const NavItem = ({ id, icon: Icon, label, activeSection, onClick }) => {
+const NavItem: React.FC<NavItemProps> = ({ id, icon: Icon, label, activeSection, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -35,7 +44,12 @@ const NavItem = ({ id, icon: Icon, label, activeSection, onClick }) => {
   );
 };
 
-const Header = ({ activeSection, scrollToSection }) => (
+type HeaderProps = {
+  activeSection: string;
+  scrollToSection: (sectionId: string) => void;
+};
+
+const Header: React.FC<HeaderProps> = ({ activeSection, scrollToSection }) => (
   <header className="bg-gray-900 text-white fixed top-0 left-0 right-0 z-10 py-4 px-6 flex justify-between items-center shadow-md">
     <nav>
       <ul className="flex items-center">

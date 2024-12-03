@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 import { Mail, Linkedin } from 'lucide-react';
 
-const ContactSection = ({ contactRef }) => {
+type ContactSectionProps = {
+  contactRef: RefObject<HTMLElement>;
+};
+
+const ContactSection: React.FC<ContactSectionProps> = ({ contactRef }) => {
   return (
     <section
       ref={contactRef}
@@ -14,7 +18,7 @@ const ContactSection = ({ contactRef }) => {
             <div className="text-left">
               <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
               <p className="text-lg text-gray-300 mb-8">
-                I'm always interested in hearing about new opportunities, projects, or just having a chat about technology.
+                I&aposm always interested in hearing about new opportunities, projects, or just having a chat about technology.
               </p>
             </div>
 
