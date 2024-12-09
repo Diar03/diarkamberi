@@ -47,12 +47,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contactRef }) => {
           </div>
 
           {/* Geometric Shapes Section */}
-          <div className="flex flex-wrap justify-center items-center space-x-6 space-y-6 p-8 bg-gray-700 rounded-lg shadow-xl">
-            <div className="w-20 h-20 bg-blue-500 hover:bg-blue-600 hover:scale-50 rounded-full transition duration-300"></div>
-            <div className="w-24 h-24 bg-red-500 hover:bg-red-600 hover:rotate-12 rounded-lg transition duration-300"></div>
-            <div className="w-16 h-16 bg-green-500 hover:bg-green-600 hover:-rotate-90 rounded-md transition duration-300"></div>
-            <div className="w-28 h-28 bg-yellow-500 hover:bg-yellow-600 rounded-lg hover:-rotate-12 transition duration-300"></div>
-            <div className="w-20 h-20 bg-purple-500 hover:bg-purple-600 rounded-full hover:scale-x-150 transition duration-300"></div>
+          <div className="flex flex-wrap justify-center items-center space-x-2 space-y-2 p-4 bg-gray-700 rounded-lg shadow-xl sm:space-x-4 sm:space-y-4 md:space-x-6 md:space-y-6">
+            <div className="w-16 h-16 bg-blue-500 hover:bg-blue-600 hover:scale-50 rounded-full transition duration-300 sm:w-20 sm:h-20 md:w-24 md:h-24"></div>
+            <div className="w-16 h-16 bg-red-500 hover:bg-red-600 hover:rotate-12 rounded-lg transition duration-300 sm:w-20 sm:h-20 md:w-24 md:h-24"></div>
+            <div className="w-14 h-14 bg-green-500 hover:bg-green-600 hover:-rotate-90 rounded-md transition duration-300 sm:w-18 sm:h-18 md:w-20 md:h-20"></div>
+            <div className="w-18 h-18 bg-yellow-500 hover:bg-yellow-600 rounded-lg hover:-rotate-12 transition duration-300 sm:w-22 sm:h-22 md:w-28 md:h-28"></div>
+            <div className="w-14 h-14 bg-purple-500 hover:bg-purple-600 rounded-full hover:scale-x-150 transition duration-300 sm:w-18 sm:h-18 md:w-20 md:h-20"></div>
           </div>
         </div>
       </div>

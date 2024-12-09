@@ -133,7 +133,7 @@ export default function Page() {
             <div>
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <p className="text-gray-700 mb-8">
-                I am a computer science student with a passion for programming and problem-solving. I have a strong background in various programming languages and have gained practical experience through various projects and assignments.
+                I am a computer science graduate with a passion for programming and problem-solving. I have a strong background in various programming languages and have gained practical experience through various projects and assignments.
                 In the future I aspire to be a successful entrepreneur, contributing to the development of the tech scene in my home country of Kosovo.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
